@@ -1,0 +1,16 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.test{
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: tomato;
+}
+
+@import url(fonts.scss);
+
+
+@import url(header.scss);
