@@ -1,0 +1,142 @@
+@use 'variables';
+
+.header{
+    // position: sticky;
+    // top: 0;
+    // left: 0;
+    padding: 16px;
+
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo{
+        width: 130px;
+        height: 61px;
+    }
+
+    &-menu{
+
+        &__content{
+            display: flex;
+            align-items: center;
+
+            list-style-type: none;
+        }
+
+        &__item{
+            padding-left: 40px;
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            & a{
+                @include variables.bold;
+                font-size: variables.$font-size-18;
+                line-height: variables.$font-line-height-160-int;
+
+                color: variables.$text-dark-white;
+
+                text-decoration: none;
+            }
+
+            &_rtl{
+                padding-left: 0;
+                padding-right: 40px;
+            }
+        }
+    }
+
+    &-call{
+        display: flex;
+        align-items: center;
+
+        & a{
+            margin-left: 36px;
+            &:first-child{
+                margin-left: 0;
+            }
+
+            text-decoration: none
+        }
+
+        &__item{
+            display: flex;
+            align-items: center;
+        }
+
+        &__wrapper-img{
+            width: 40px;
+            aspect-ratio: 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & img{
+                height: 100%;
+            }
+        }
+
+        &__text{
+            margin-left: 12px;
+        }
+        &__title{
+            @include variables.bold;
+            font-size: variables.$font-size-14;
+            line-height: variables.$font-line-height-150-int;
+
+            color: variables.$text-dark-white;
+        }
+        &__sub-title{
+            @include variables.regular;
+            font-size: variables.$font-size-18;
+            line-height: variables.$font-line-height-150-int;
+
+            color: variables.$text-dark;
+        }
+
+
+    }
+}
+
+.languages{
+    padding: 10px;
+
+    background-color: #1F4746;
+
+    border-radius: 4px;
+
+    &__button{
+        @include variables.bold;
+        font-size: variables.$font-size-16;
+        line-height: variables.$font-line-height-160-int;
+        color: variables.$text-dark-white;
+
+        color: #FFFFFF;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    position: relative;
+    &__content{
+        position: absolute;
+        top: 45px;
+        left: 0;
+
+        width: 100%;
+        height: 100px;
+    }
+
+    &__menu{
+        list-style-type: none;
+
+        & a{
+            text-decoration: none;
+        }
+    }
+}

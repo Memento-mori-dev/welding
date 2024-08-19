@@ -1,16 +1,85 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" type="image/svg+xml" href="public/svg/Welding-Power-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>welding</title>
+    <title>Welding Power</title>
     <link rel="stylesheet" href="sass/main.scss">
   </head>
   <body>
-    <div class="test">
+    <!-- header start -->
+    <header class="header wrapper-width" dir="ltr">
+      <div class="header-content">
+        <img src="public/svg/Welding-Power-logo.svg" alt="логотип компании Welding Power" class="header-logo">
 
-    </div>
+        <nav class="header-menu" dir="ltr">
+          <ul class="header-menu__content">
+            <li class="header-menu__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#">Условия поставки</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#">Наши преимущества</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#">Документы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-call">
+          <a href="#">
+            <div class="header-call__item">
+              <div class="header-call__wrapper-img">
+                <img src="public/svg/phone.svg" alt="">
+              </div>
+              <div class="header-call__text" dir="ltr">
+                <p class="header-call__title">Call us</p>
+                <p class="header-call__sub-title">(405) 555-0128</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="header-call__item">
+              <div class="header-call__wrapper-img">
+                <img src="public/svg/chat.svg" alt="">
+              </div>
+              <div class="header-call__text" dir="ltr">
+                <p class="header-call__title">Talk to us</p>
+                <p class="header-call__sub-title">hello@createx.com</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="languages">
+          <button  class="languages__button">
+            Языки
+          </button>
+          <div class="languages__content">
+            <nav>
+              <ul class="languages__menu">
+                <li>
+                  <a href="#">ru</a>
+                  <a href="#">en</a>
+                  <a href="#">ar</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
