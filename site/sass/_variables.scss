@@ -27,8 +27,26 @@ $font-line-height-160-int: 160%;
 }
 
 // Цвета
-
+$green: #1F4746;
+$green-white: #6CB7B0;
 
 // текст
+$text-white: #FFFFFF;
 $text-dark: #1E212C;
 $text-dark-white: #424551;
+
+
+
+// анимации
+@mixin animation-button {
+    transition: background-color 200ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+
+@mixin animation-button-back-50 {
+    transition: background-color 50ms linear;
+}
+
+@mixin animation-height-200 {
+    transition: height 200ms ease-in;
+}
