@@ -11,9 +11,11 @@ $font-size-12: 12px;
 $font-size-14: 14px;
 $font-size-16: 16px;
 $font-size-18: 18px;
+$font-size-46: 46px;
 
 
 // line-height
+$font-line-height-130-int: 130%;
 $font-line-height-150-int: 150%;
 $font-line-height-160-int: 160%;
 
@@ -32,6 +34,7 @@ $white: #fff;
 $green: #1F4746;
 $green-white: #6CB7B0;
 $fill-dark: #1E212C;
+$grey: #F0F0F0;
 
 // текст
 $text-white: #FFFFFF;
@@ -56,4 +59,10 @@ $text-dark-white: #424551;
 }
 @mixin animation-height-400 {
     transition: height 400ms ease-in;
+}
+
+
+// тень
+@mixin shadow-card {
+    box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
 }

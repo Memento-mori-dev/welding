@@ -1,0 +1,29 @@
+@use 'variables';
+
+.about{
+    margin: 19px -15px -15px -15px;
+
+    display: flex;
+    justify-content: center;
+
+    
+
+    // &__item{
+    //     margin: 15px;
+
+    //     width: calc(33.3% - 30px);
+
+    //     @include variables.shadow-card;
+    // }
+    // &-item{
+    //     &__images{
+    //         width: 100%;
+    //         height: 345px;
+    //     }
+
+    //     &__content{
+    //         height: 95px;
+    //         max-height: 95px;
+    //     }
+    // }
+}

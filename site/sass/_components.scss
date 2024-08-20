@@ -1,3 +1,5 @@
+@use 'variables';
+
 .wrapper-width{
     margin: 0 auto;
     max-width: 1920px;
@@ -5,10 +7,24 @@
 .wrapper{
     margin: 0 auto;
     max-width: 1230px;
+
+    &_grey{
+        background-color: variables.$grey;
+    }
 }
 .wrapper-content{
     padding-top: 120px;
     padding-bottom: 120px;
+
+    &__title{
+        @include variables.bold;
+        font-size: variables.$font-size-46;
+        line-height: variables.$font-line-height-130-int;
+
+        text-align: center;
+
+        color: variables.$text-dark;
+    }
 }
 
 button{
