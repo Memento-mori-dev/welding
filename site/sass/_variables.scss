@@ -45,6 +45,7 @@ $text-dark-white: #424551;
 
 @mixin animation-button-back-50 {
     transition: background-color 50ms linear;
+    transition: opacity 50ms ease-in;
 }
 
 @mixin animation-height-200 {
