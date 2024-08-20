@@ -51,3 +51,6 @@ $text-dark-white: #424551;
 @mixin animation-height-200 {
     transition: height 200ms ease-in;
 }
+@mixin animation-height-400 {
+    transition: height 400ms ease-in;
+}
