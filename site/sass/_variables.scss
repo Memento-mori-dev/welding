@@ -7,6 +7,7 @@ $font-weight-bold: 700;
 $font-weight-regular: 400;
 
 // size
+$font-size-12: 12px;
 $font-size-14: 14px;
 $font-size-16: 16px;
 $font-size-18: 18px;
@@ -27,8 +28,10 @@ $font-line-height-160-int: 160%;
 }
 
 // Цвета
+$white: #fff;
 $green: #1F4746;
 $green-white: #6CB7B0;
+$fill-dark: #1E212C;
 
 // текст
 $text-white: #FFFFFF;
@@ -38,9 +41,9 @@ $text-dark-white: #424551;
 
 
 // анимации
-@mixin animation-button {
+@mixin  animation-button {
     transition: background-color 200ms ease-in;
-    transition: opacity 100ms ease-in;
+    transition: opacity 20ms linear;
 }
 
 @mixin animation-button-back-50 {

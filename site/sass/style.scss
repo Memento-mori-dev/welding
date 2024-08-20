@@ -10,8 +10,8 @@
     background-color: tomato;
 }
 
-@import url(fonts.scss);
-
-@import url(components.scss);
-
-@import url(header.scss);
+@import 'fonts',
+'variables',
+'components',
+'header',
+'footer';

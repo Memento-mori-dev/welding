@@ -7,6 +7,9 @@
     padding: 16px;
 
     &-content{
+        margin: 0 auto;
+        max-width: 1600px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -146,6 +149,10 @@
             @include variables.animation-button-back-50;
             background-color: variables.$green;
         }
+
+        &_phone{
+            display: none;
+        }
     }
 
     position: relative;
@@ -168,6 +175,8 @@
         overflow: hidden;
 
         @include variables.animation-height-200;
+
+        background-color: variables.$white;
     }
 
     &__menu{
@@ -205,14 +214,21 @@
 }
 .menu-content-wrapper{
     display: none;
+    background: variables.$white;
+
+    z-index: 100;
 }
 
 @media (max-width: 1600px){
+    .header{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .header-call__text{
         display: none;
     }
 }
-@media (max-width: 1224px){
+@media (max-width: 1264px){
     .menu{
         margin-left: 30px;
 
@@ -247,9 +263,9 @@
     .header-menu{
         display: none;
     }
-    .languages{
-        display: none;
-    }
+    // .languages{
+    //     display: none;
+    // }
 
     .header{
         position: relative;
@@ -293,6 +309,12 @@
             @include variables.animation-height-400;
         }
     }
+    .languages__button{
+        display: none;
+    }
+    .languages__button_phone{
+        display: block;
+    }
 }
 @media (max-width: 768px){
     .header-logo{
@@ -301,6 +323,12 @@
     }
     .header-call__wrapper-img{
         width: 33px;
+    }
+    .languages{
+        margin-left: 20px;
+    }
+    .header-call > a{
+        margin-left: 20px;
     }
 }
 
