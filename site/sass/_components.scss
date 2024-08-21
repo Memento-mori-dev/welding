@@ -44,6 +44,11 @@
         padding-right: 25px;
     }
 }
+@media (max-width: 1024px){
+    .wrapper-content__title{
+        font-size: 34px;
+    }
+}
 
 button{
     cursor: pointer;

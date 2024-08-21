@@ -59,6 +59,14 @@
         width: calc(50% - 30px);
     }
 }
+@media (max-width: 1024px){
+    .catalog{
+        margin: 20px -10px -10px -10px;;
+    }
+    .catalog__item{
+        margin: 10px;
+    }
+}
 
 @media (max-width: 768px){
     .catalog__item{
