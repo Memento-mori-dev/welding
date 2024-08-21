@@ -12,6 +12,7 @@ $font-size-14: 14px;
 $font-size-16: 16px;
 $font-size-18: 18px;
 $font-size-20: 20px;
+$font-size-28: 28px;
 $font-size-46: 46px;
 
 
@@ -19,6 +20,11 @@ $font-size-46: 46px;
 $font-line-height-130-int: 130%;
 $font-line-height-150-int: 150%;
 $font-line-height-160-int: 160%;
+$font-line-height-325-int: 325%;
+
+$font-line-height-50-px: 50px;
+$font-line-height-52-px: 52px;
+
 
 
 @mixin bold {

@@ -5,12 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="public/svg/Welding-Power-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welding Power</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body>
 
     <!-- header start -->
-    
     <header class="header wrapper-width" dir="ltr">
       <div class="header-content">
         <a href="#">
@@ -110,10 +110,60 @@
         </div>
       </div>
     </header>
-    
     <!-- header end -->
     
     <main>
+      <!-- slider start -->
+      <section class="slider swiper ">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slider__item" style="background-image: url(public/img/bg-image.jpg);">
+            <div class="slider-item__fill">
+              <p class="slider__text">
+                Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. 
+                Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis. 
+              </p>
+              <div class="slider__button">
+                <div class="slider-button__item">
+                  <a href="" class="button button_border button_border-white">
+                    Learn more
+                  </a>
+                </div>
+                <div class="slider-button__item">
+                  <a href="" class="button button_green">
+                    SUBMIT REQUEST
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__item" style="background-image: url(public/img/bg-image.jpg);">
+            <div class="slider-item__fill">
+            </div>
+          </div>
+          <div class="swiper-slide slider__item" style="background-image: url(public/img/bg-image.jpg);">
+            <div class="slider-item__fill">
+            </div>
+          </div>
+          <div class="swiper-slide slider__item" style="background-image: url(public/img/bg-image.jpg);">
+            <div class="slider-item__fill">
+            </div>
+          </div>
+        </div>
+      
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev slider__control">
+          <img src="public/svg/slider-arrow-left.svg" alt="">
+        </div>
+        <div class="swiper-button-next slider__control">
+          <img src="public/svg/slider-arrow-right.svg" alt="">
+        </div>
+      </section>
+      <!-- slider end -->
+
 
       <!-- about start -->
       <section class="wrapper-width wrapper-content">
@@ -332,6 +382,7 @@
 
     <!-- footer end -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
