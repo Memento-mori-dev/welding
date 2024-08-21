@@ -41,31 +41,20 @@ menu.onclick = function (e) {
 }
 
 // slider
-const slider = new Swiper('.slider', {
-    // loop: true,
-    // effect: "creative",
-    // creativeEffect: {
-    //   prev: {
-    //     shadow: true,
-    //     translate: ["-120%", 0, -500],
-    //   },
-    //   next: {
-    //     shadow: true,
-    //     translate: ["120%", 0, -500],
-    //   },
-    // },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function(index, className) {
-        return `<div class="slider-item__number ${className}"> 
-                   ${(index < 10 ? '0' + (index + 1) : (index + 1))} 
-                   <div class="slider-item-number__line"></div>
-                </div>`;
-      },
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-});
+// чтобы заработало нужно убрать коментарии в html
+// const slider = new Swiper('.slider', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         renderBullet: function(index, className) {
+//         return `<div class="slider-item__number ${className}"> 
+//                    ${(index < 10 ? '0' + (index + 1) : (index + 1))} 
+//                    <div class="slider-item-number__line"></div>
+//                 </div>`;
+//       },
+//     },
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+// });
