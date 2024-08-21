@@ -27,6 +27,13 @@
     }
 }
 
+@media (max-width: 1600px){
+    .wrapper-width{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
 button{
     cursor: pointer;
 }
