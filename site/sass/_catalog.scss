@@ -52,6 +52,17 @@
             text-align: center;
         }
     }
+
+    &-link{
+        margin-top: 60px;
+
+        @include variables.bold;
+        font-size: variables.$font-size-24;
+        line-height: variables.$font-line-height-160-int;
+        color: variables.$text-dark;
+        color: variables.$text-dark-white; 
+        text-align: center;
+    }
 }
 
 @media (max-width: 1264px){
@@ -65,6 +76,9 @@
     }
     .catalog__item{
         margin: 10px;
+    }
+    .catalog-link{
+        margin-top: 20px;
     }
 }
 
