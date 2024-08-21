@@ -25,6 +25,17 @@
 
         color: variables.$text-dark;
     }
+
+    &__sub-title{
+        margin-top: 24px;
+
+        @include variables.regular;
+        font-size: variables.$font-size-18;
+        line-height: variables.$font-line-height-150-int;
+        color: variables.$text-grey;
+
+        text-align: center;
+    }
 }
 
 @media (max-width: 1600px){
