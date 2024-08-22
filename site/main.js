@@ -20,25 +20,40 @@ lang.onclick = function (e) {
 }
 
 // меню для телефона
-let menu = document.getElementById('menu');
-
-menu.onclick = function (e) {
-    let menuContent = document.getElementById('menu-content');
-
-    let height = window.getComputedStyle(menuContent.querySelector('.menu-content')).height;
-    let newHeight = Number(height.split('px')[0]) + 25;
-
-    console.log(newHeight);
-    
-
-    if (menu.classList.contains('active')) {
-        menu.classList.remove('active');
-        menuContent.style.cssText = 'height: 0';
-    }else{
-        menu.classList.add('active');
-        menuContent.style.cssText = `height: 100vh`;
+let menu = {
+    button: document.getElementById('menu'),
+    content: document.getElementById('menu-content'),
+    // height() {
+    //    return window.getComputedStyle(this.content.querySelector('.menu-content')).height
+    // },
+    // newHeight() { 
+    //     return Number(this.height().split('px')[0]) + 25
+    // },
+    open(){
+        this.button.classList.add('active');
+        this.content.style.cssText = `height: 100vh`;
+    },
+    close(){
+        this.button.classList.remove('active');
+        this.content.style.cssText = 'height: 0';
     }
 }
+
+let menuButton = menu.button;
+menuButton.onclick = function () {
+    if (menuButton.classList.contains('active')) {
+        menu.close();
+    }else{
+        menu.open();
+    }
+}
+
+let menuContent = menu.content;
+menuContent.onclick = function () {
+    menu.close();
+}
+
+
 
 // slider
 // чтобы заработало нужно убрать коментарии в html
