@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-.test{
-    width: 50px;
-    aspect-ratio: 1;
-    background-color: tomato;
+html {
+    scroll-behavior: smooth;
 }
 
 @import 'fonts',
@@ -21,4 +19,6 @@
 'slider',
 'documents',
 'conditions',
-'advantages';
+'advantages',
+'form',
+'communication';

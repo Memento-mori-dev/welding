@@ -266,7 +266,6 @@
       </section> 
       <!-- catalog end -->
 
-
       
       <div class="wrapper-width wrapper-content">
         <p class="wrapper-content__title">Условия поставки</p>
@@ -366,8 +365,9 @@
         <!-- conditions end -->
         <p class="wrapper-content__title">Наши преимущества</p>
         <p class="wrapper-content__sub-title">We offer you three categories of construction.</p>
+        <!-- advantages start -->
         <div class="wrapper">
-          <div class="advantages">
+          <section class="advantages">
             <div class="advantages__item">
               <img src="public/svg/ic-like.svg" alt="" class="advantages__img">
               <p class="advantages__title">
@@ -397,17 +397,11 @@
                 Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
               </p>
             </div>
-          </div>
+          </section>
         </div>
-        <!-- conditions start -->
-        <section>
-          
-        </section>
-        <!-- conditions end -->
+        <!-- advantages end -->        
       </div>
-
       
-
 
       <!-- documents start -->
        <section class="wrapper-width wrapper-content wrapper_grey">
@@ -468,14 +462,45 @@
        </section>
       <!-- documents end -->
 
-      <!-- conditions start -->
-      <!-- conditions end -->
+      <!-- communication start -->
+       <section class="wrapper-width wrapper-content wrapper-content_images" style="background-image: url(public/img/image1.png);">
+        <div class="wrapper">
+          <div class="communication">
+            <form action="" class="communication__form">
+              <p class="communication-form__title">
+                Сделать запрос
+              </p>
+
+              <div class="communication-form__content">
+                <div class="communication-form__item">
+                  <label for="name" class="label">Name*</label>
+                  <input type="text" placeholder="Your name" class="input" id="name" required>
+                </div>
+                <div class="communication-form__item">
+                  <label for="phone" class="label">Phone*</label>
+                  <input type="text" placeholder="Your phone number" class="input" id="phone" required>
+                </div>
+                <div class="communication-form__item">
+                  <label for="email" class="label">Email</label>
+                  <input type="email" placeholder="Your phone number" class="input" id="email">
+                </div>
+                <div class="communication-form__item">
+                  <label for="message" class="label">Message*</label>
+                  <textarea name="" placeholder="Your message" id="message" class="textarea" required></textarea>
+                </div>
+              </div>
+
+              <input type="submit" value="send request" class="form__submit"/>
+            </form>
+          </div>
+        </div>
+       </section>
+      <!-- communication end -->
 
 
     </main>
 
     <!-- footer start -->
-
      <footer class="footer wrapper-width">
       <div class="footer__content wrapper">
         <div class="footer-header">
@@ -587,7 +612,6 @@
         </div>
       </div>
      </footer>
-
     <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
