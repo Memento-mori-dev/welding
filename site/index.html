@@ -20,25 +20,25 @@
         <nav class="header-menu" dir="ltr">
           <ul class="header-menu__content">
             <li class="header-menu__item">
-              <a href="#">О нас</a>
+              <a href="#about">О нас</a>
             </li>
             <li class="header-menu__item">
-              <a href="#">Каталог товаров</a>
+              <a href="#catalog">Каталог товаров</a>
             </li>
             <li class="header-menu__item">
-              <a href="#">Условия поставки</a>
+              <a href="#conditions">Условия поставки</a>
             </li>
             <li class="header-menu__item">
-              <a href="#">Наши преимущества</a>
+              <a href="#advantages">Наши преимущества</a>
             </li>
             <li class="header-menu__item">
-              <a href="#">Обратная связь</a>
+              <a href="#communication">Обратная связь</a>
             </li>
           </ul>
         </nav>
 
         <div class="header-call">
-          <a href="#">
+          <a href="tel:+74951234567">
             <div class="header-call__item">
               <div class="header-call__wrapper-img">
                 <img src="public/svg/phone.svg" alt="">
@@ -49,7 +49,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="mailto:vlad@webref.ru">
             <div class="header-call__item">
               <div class="header-call__wrapper-img">
                 <img src="public/svg/chat.svg" alt="">
@@ -167,7 +167,7 @@
 
       <!-- about start -->
       <section class="wrapper-width wrapper-content">
-        <p class="wrapper-content__title">О нас</p>
+        <p class="wrapper-content__title" id="about">О нас</p>
         <div class="about wrapper">
           <p class="about__top-28 text__bold">
             Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. 
@@ -208,7 +208,7 @@
 
       <!-- catalog start -->
       <section class="wrapper-width wrapper-content wrapper_grey">
-        <p class="wrapper-content__title">Каталог товаров</p>
+        <p class="wrapper-content__title" id="catalog">Каталог товаров</p>
         <div class="wrapper">
           <div class="catalog">
             <article class="catalog__item">
@@ -268,7 +268,7 @@
 
       
       <div class="wrapper-width wrapper-content">
-        <p class="wrapper-content__title">Условия поставки</p>
+        <p class="wrapper-content__title" id="conditions">Условия поставки</p>
         <p class="wrapper-content__sub-title">We offer you three categories of construction.</p>
         <!-- conditions start -->
         <div class="wrapper">
@@ -363,7 +363,7 @@
           </section>
         </div>
         <!-- conditions end -->
-        <p class="wrapper-content__title">Наши преимущества</p>
+        <p class="wrapper-content__title" id="advantages">Наши преимущества</p>
         <p class="wrapper-content__sub-title">We offer you three categories of construction.</p>
         <!-- advantages start -->
         <div class="wrapper">
@@ -466,7 +466,7 @@
        <section class="wrapper-width wrapper-content wrapper-content_images" style="background-image: url(public/img/image1.png);">
         <div class="wrapper">
           <div class="communication">
-            <form action="" class="communication__form">
+            <form action="" class="communication__form" id="communication">
               <p class="communication-form__title">
                 Сделать запрос
               </p>
@@ -496,7 +496,6 @@
         </div>
        </section>
       <!-- communication end -->
-
 
     </main>
 
@@ -528,12 +527,12 @@
              <nav class="footer-menu-block__content">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="tel:+74951234567">
                     <span>Номер:</span><p>(405) 555-0128</p>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="mailto:vlad@webref.ru">
                     <span>Email:</span> <p>hello@createx.com</p>
                   </a>
                 </li>
@@ -606,7 +605,9 @@
               ВВЕРХ
             </p>
             <button class="go-top__button">
-              <img src="public/svg/arrow.svg" alt="">
+              <a href="#">
+                <img src="public/svg/arrow.svg" alt="">
+              </a>
             </button>
           </div>
         </div>

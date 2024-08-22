@@ -6,7 +6,16 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
+
+@media (max-width: 768px){
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+    }
+}
+
 
 @import 'fonts',
 'variables',

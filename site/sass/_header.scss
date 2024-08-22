@@ -1,10 +1,12 @@
 @use 'variables';
 
 .header{
-    // position: sticky;
-    // top: 0;
-    // left: 0;
+    position: sticky;
+    top: 0;
     padding: 16px;
+
+    background-color: variables.$white;
+    z-index: 1000;
 
     &-content{
         margin: 0 auto;
@@ -267,9 +269,9 @@
     //     display: none;
     // }
 
-    .header{
-        position: relative;
-    }
+    // .header{
+    //     position: relative;
+    // }
     .menu-content{
         padding: 16px;
 
