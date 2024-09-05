@@ -56,20 +56,19 @@ menuContent.onclick = function () {
 
 
 // slider
-// чтобы заработало нужно убрать коментарии в html
-// const slider = new Swiper('.slider', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//         renderBullet: function(index, className) {
-//         return `<div class="slider-item__number ${className}"> 
-//                    ${(index < 10 ? '0' + (index + 1) : (index + 1))} 
-//                    <div class="slider-item-number__line"></div>
-//                 </div>`;
-//       },
-//     },
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-// });
+const slider = new Swiper('.slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function(index, className) {
+        return `<div class="slider-item__number ${className}"> 
+                   ${(index < 10 ? '0' + (index + 1) : (index + 1))} 
+                   <div class="slider-item-number__line"></div>
+                </div>`;
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
